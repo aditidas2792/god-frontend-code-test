@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Car } from "../src/types/car";
 import carData from "../public/api/cars.json";
 import Slider from "react-slick";
@@ -12,7 +12,19 @@ import { useRouter } from 'next/router';
 const Home: React.FC = () => {
   const customSlider = useRef<Slider>(null);
   const [selectedBodyType, setSelectedBodyType] = useState<string | null>(null);
+  const [cars, setCars] = useState<Car[]>([]);
   const router = useRouter(); 
+
+    const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+    // Simulate API call with useEffect using async/await
+    useEffect(() => {
+      const fetchData = async () => {
+        await delay(500)
+        setCars(carData);
+      };
+      fetchData();
+    }, []);
 
   // Filter cars based on selected body type
   const filteredCars = selectedBodyType
