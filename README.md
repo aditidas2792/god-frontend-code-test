@@ -1,5 +1,56 @@
 # Volvo Cars (Global Online Digital)
 
+## Assignment
+
+Hi👋🏽! 
+Thanks for reviewing my assignment😄 I had alot of fun actually working on it.
+
+1. Install dependencies:
+
+    ```bash
+    cd god-frontend-code-test
+    npm install
+    ```
+
+2. To run the project. You can view it on localhost:3000
+
+    ```bash
+    npm run dev
+    ```
+
+### Assumptions & limitations
+1. I have assumed that the cars.json file is all the data I need and developed this solution around it
+2. I used react-slick library for the slider effect, instead of building one from scratch
+3. I have tried to use the new design system instead of vcc-ui, but where I didn't understand — I did custom CSS
+4. I have never actually worked alot on accessibility, so I have to tried to add whatever I know
+5. I have not used Next.js but again, i have tried to use it whereever I could e.g. routing.
+
+### Folder structure
+ ```bash
+├───god-frontend-code-test 
+    │
+    ├───pages
+    │   └───_app.tsx  
+    │   └───home.tsx
+    │
+    ├───src
+    │   ├───components
+    │   │   └───carCard.tsx   
+    │   │   └───chevronIcon.tsx
+    │   │   └───filterBar.tsx
+    │   ├───types
+    │   │   └───car.ts
+    │
+    └───public
+    │   ├───css
+    │   │   └───styles.css 
+
+```
+
+
+###############################################
+
+
 ## Front-end coding test (React)
 
 Our team's designer has come up with a new design to show our latest and greatest recharge cars on the website.

@@ -1,4 +1,46 @@
 body {
-  background: steelblue;
-  color: white;
+  background: white;
+  color: black;
+}
+
+.filter-bar {
+  width: 15rem;
+}
+
+.filter-bar select {
+  height: 3.5rem;
+}
+
+.slick-dots {
+  margin-top: 1rem;
+}
+
+.car-text {
+color: #808c98;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+}
+
+.button-with-arrow {
+  color:#337ac0
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .button-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-nav {
+    display: flex;
+    margin-top: 1rem;
+    gap:0.25rem;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
 }
